@@ -17,7 +17,6 @@ class LanguageOptions
             'Zulu',
             'Xhosa',
             'Sotho',
-            // Add more languages here in the future
         ];
     }
 }

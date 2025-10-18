@@ -3,6 +3,7 @@
     'modalSize' => "",
 ])
 
+{{-- Bootstrap modal wrapper | Sets the base config for modals created on this project --}}
 <div
     id="{{ $id }}"
     @class(['modal fade', $modalSize])

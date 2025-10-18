@@ -14,12 +14,16 @@ your local machine for development and testing purposes.
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 * [Node.js & npm](https://nodejs.org/en)
 
+---
+
 ### 1. Clone the Repository
 
 ```shell
 git clone git@github.com:Daniel-C02/people-manager.git
 cd people-manager
 ```
+
+---
 
 ### 2. Configure Environment
    
@@ -29,6 +33,8 @@ other settings here, but the defaults are set up for Laravel Sail.
 ```shell
 cp .env.example .env
 ```
+
+---
 
 ### 3. Install Composer Dependencies
 
@@ -43,6 +49,8 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
+---
+
 ### 4. Start Docker Containers
 
 Start the application containers (web, database, etc.) in the background.
@@ -54,11 +62,15 @@ Start the application containers (web, database, etc.) in the background.
 Note: You can now use sail as an alias for interacting with 
 the application (e.g., sail artisan..., sail npm...).
 
+---
+
 ### 5. Generate Application Key
 
 ```shell
 sail artisan key:generate
 ```
+
+---
 
 ### 6. Run Database Migrations & Seed
 
@@ -67,6 +79,8 @@ This will create the database schema and populate it with initial data (includin
 ```shell
 sail artisan migrate:fresh --seed
 ```
+
+---
 
 ### 7. Clear Configuration Cache
 
@@ -82,11 +96,15 @@ If the command above gives you trouble, you can also run:
 sail artisan optimize:clear
 ```
 
+---
+
 ### 8. Install NPM Dependencies
 
 ```shell
 npm install
 ```
+
+---
 
 ### 9. Build Frontend Assets
 
@@ -98,7 +116,20 @@ npm run dev
 
 You can now access the application at http://localhost
 
-### 🔒 Logins
+---
+
+## 📧 Email Catching (Mailpit)
+
+This project uses Mailpit to intercept all outgoing emails during development. 
+This allows you to test email functionality (like the welcome email) without sending real emails.
+
+After running `sail up -d`, you can view the Mailpit dashboard in your browser at:
+
+**[http://localhost:8025](http://localhost:8025)**
+
+---
+
+## 🔒 Logins
 
 | **Email**        | **Password** | **Type**           |
 |------------------|--------------|--------------------|

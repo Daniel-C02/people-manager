@@ -13,6 +13,11 @@
         x-data
         x-init="
             (() => {
+                /*
+                 * When the user clicks on a certain Person's edit button, livewire initialises the persons
+                 * properties and then dispatches an event to let us know that we can process to open the
+                 * modal for the user to edit the person.
+                 */
                 const modal = new bootstrap.Modal('#{{ $id }}');
                 Livewire.on('show-create-person-modal', () => {
                     modal.show();
@@ -94,7 +99,6 @@
                         />
                     </div>
                 </div>
-
 
                 {{-- Action buttons --}}
                 <div class="d-flex gap-6 pt-8 mt-6">
