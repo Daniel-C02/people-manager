@@ -1,0 +1,26 @@
+@use "../theme" as *;
+
+// bootstrap functions
+@use "bootstrap/scss/functions" as *;
+
+
+.dropdown {
+    .dropdown-menu {
+        --bs-dropdown-bg: #{$neutral-500};
+
+        //transform: translateX(30px);
+        transform: translate(20px, 42px) !important;
+        inset: 0 auto auto 0 !important;
+        opacity: 0;
+        transition: transform 0.2s ease, opacity 0.2s ease, visibility 0.2s ease;
+        visibility: hidden;
+        display: inherit;
+
+        &.show {
+            //transform: translateX(0);
+            transform: translate(0, 42px) !important;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@use "../theme" as *;
+
+// bootstrap functions
+@use "bootstrap/scss/functions" as *;
+
+/*
+ * Table styles
+ */
+table.table {
+    thead, tbody, tfoot, tr, td, th {
+        border-color: rgba($secondary-500, 0.5);
+        border-style: dashed;
+        border-width: 0;
+    }
+
+    & > :not(caption) > * > * {
+        vertical-align: middle;
+    }
+
+    thead {
+        height: 56px;
+    }
+    tbody tr {
+        height: 52px;
+    }
+    td:first-child, th:first-child {
+        padding-left: $sp-8;
+    }
+}
+
+/*
+ * Dark Theme
+ */
+[data-bs-theme=dark] {
+    color-scheme: dark;
+
+    --bs-body-color: #{$white};
+    --bs-body-bg: $neutral-700;
+
+    .table-info {
+        --bs-table-bg: #{$info};
+        --bs-table-color: #{$white};
+    }
+    .table-neutral {
+        --bs-table-bg: #{$neutral-500};
+        --bs-table-color: #{$neutral-100};
+        --bs-body-font-size: 0.85rem;
+
+        tr:hover > * {
+            --bs-table-bg: rgba(#{to-rgb($neutral-500)}, 0.5);
+            --bs-table-color: #{$neutral-100};
+        }
+    }
+}
+

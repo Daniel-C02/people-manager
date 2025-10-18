@@ -1,0 +1,16 @@
+@use "../theme" as *;
+
+#s_dashboard {
+
+    .card {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    input[name="search"] {
+        max-width: 300px;
+    }
+
+    table {
+        min-width: 1300px;
+    }
+}

@@ -1,0 +1,15 @@
+@use "../theme" as *;
+
+// bootstrap functions
+@use "bootstrap/scss/functions" as *;
+
+div.iti {
+    width: 100%;
+
+    --iti-dropdown-bg: #{$neutral-700};
+    --iti-border-color: rgba(#{to-rgb($secondary-500)}, 0.25);
+
+    .iti__country {
+        font-size: 0.825rem;
+    }
+}

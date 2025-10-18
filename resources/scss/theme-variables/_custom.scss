@@ -1,0 +1,15 @@
+// project theme variables
+@use "../theme" as *;
+
+// bootstrap functions
+@use "bootstrap/scss/functions" as *;
+
+// Light theme
+:root, [data-bs-theme=light] {
+
+}
+
+// Dark theme
+[data-bs-theme=dark] {
+   color-scheme: dark;
+}

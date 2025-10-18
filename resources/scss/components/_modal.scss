@@ -1,0 +1,14 @@
+@use "../theme" as *;
+
+// bootstrap functions
+@use "bootstrap/scss/functions" as *;
+
+
+.modal {
+    --bs-modal-bg: #{$neutral-500};
+    --bs-modal-border-width: 0;
+}
+
+.modal-backdrop {
+    --bs-backdrop-opacity: 0.6;
+}

@@ -1,0 +1,45 @@
+@use "../theme" as *;
+
+// ---------------------------------------------------------------------------------------------------------------------
+// -- Inter --
+@font-face {
+   font-family: 'inter-variable';
+   src: url("@fonts/inter-variable.ttf") format('truetype');
+   font-weight: 100 900;
+   font-display: swap;
+   font-style: normal;
+}
+.ff-inter { font-family: "inter-variable", sans-serif; }
+
+// ---------------------------------------------------------------------------------------------------------------------
+// -- Georgia Pro --
+@font-face {
+   font-family: 'Georgia Pro Italic';
+   font-style: normal;
+   font-weight: normal;
+   src: url('@fonts/GeorgiaPro-Italic.woff') format('woff');
+}
+@font-face {
+   font-family: 'Georgia Pro Semibold Italic';
+   font-style: normal;
+   font-weight: normal;
+   src: url('@fonts/GeorgiaPro-SemiBoldItalic.woff') format('woff');
+}
+.ff-georgia-pro-italic { font-family: 'Georgia Pro Italic', sans-serif; }
+.ff-georgia-pro-semibold-italic { font-family: 'Georgia Pro Semibold Italic', sans-serif; }
+
+// ---------------------------------------------------------------------------------------------------------------------
+// -- Body Text Font --
+.body-text, .body-text-sm {
+   font-weight: 400;
+   color: black;
+   line-height: 1.5;
+}
+.body-text {
+   font-size: 1rem;
+   @media(min-width: $sm_bp) { font-size: 1.125rem; }
+}
+.body-text-sm {
+   font-size: .875rem;
+   @media(min-width: $sm_bp) { font-size: 1rem; }
+}

@@ -1,0 +1,9 @@
+@use "../theme" as *;
+
+// bootstrap functions
+@use "bootstrap/scss/functions" as *;
+
+.ts-dropdown {
+    --bs-body-bg: #{$neutral-700};
+    color: rgba($white, 0.6);
+}

@@ -1,0 +1,68 @@
+@use "../theme" as *;
+
+.my-pagination {
+    .pagination {
+        height: 44px;
+        display: flex;
+        gap: calc(10rem / 16);
+
+        .page-item {
+
+            img.active-arrow, img.disabled-arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &.disabled, &.active {
+                img.active-arrow { opacity: 0; }
+                img.disabled-arrow { opacity: 1; }
+            }
+
+            &.disabled {
+                .page-link { border-color: $neutral-300; }
+            }
+
+            &.active {
+                .page-link {
+                    border: none;
+                }
+            }
+
+            &:not(.disabled):not(.active) {
+                .page-link {
+                    border-color: $secondary-500;
+
+                    &:hover {
+                        border-color: $white;
+                    }
+                }
+
+                img.active-arrow { opacity: 1; }
+                img.disabled-arrow { opacity: 0; }
+            }
+
+            &:not(.active) {
+                .page-link {
+                    width: 48px;
+                }
+            }
+            &.active {
+                .page-link {
+                    padding: 0 .6rem;
+                    @media(max-width: 576px) { padding: 0 .4rem; }
+                }
+            }
+        }
+
+        .page-link {
+            height: 100%;
+            background-color: transparent;
+            border-radius: var(--bs-border-radius);
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+
+/*
+ * Project Color Map
+ */
+$white:         #fff !default;
+$primary:       #F5C93B !default;
+$secondary:     #C8DEE9 !default;
+$tertiary:      #807138 !default;
+$info:          #4E5255 !default;
+$danger:        #FF8592 !default;
+$warning:       #FD9843 !default;
+$success:       #45FA62 !default;
+
+$primary-100:   #FFEFD2;
+$primary-200:   #FFDF99;
+$primary-300:   #FFD345;
+$primary-400:   #F5C93B;
+$primary-500:   #F4BF31;
+$primary-600:   #CC9709;
+$primary-700:   #A46F00;
+$primary-800:   #7C4700;
+$primary-900:   #542D00;
+
+$secondary-100: #FAFFFF;
+$secondary-200: #F0FFFF;
+$secondary-300: #DCF2FD;
+$secondary-400: #C8DEE9;
+$secondary-500: #B4CAD5;
+$secondary-600: #8CA2AD;
+$secondary-700: #647A85;
+$secondary-800: #324853;
+$secondary-900: #0A202B;
+
+$tertiary-100:  #F8E9B0;
+$tertiary-200:  #D0C188;
+$tertiary-300:  #A89960;
+$tertiary-400:  #807138;
+$tertiary-500:  #584910;
+$tertiary-600:  #443500;
+$tertiary-700:  #302100;
+$tertiary-800:  #1C0D00;
+$tertiary-900:  #080000;
+
+$neutral-0:     #FFFFFF;
+$neutral-100:   #C6CACD;
+$neutral-200:   #9EA2A5;
+$neutral-300:   #767A7D;
+$neutral-400:   #4E5255;
+$neutral-500:   #262A2D;
+$neutral-600:   #1C2023;
+$neutral-700:   #121619;
+$neutral-800:   #080C0F;
+$neutral-900:   #000205;
+
+$error-100:     #FFC1CE;
+$error-200:     #FFADBA;
+$error-300:     #FF99A6;
+$error-400:     #FF8592;
+$error-500:     #E35D6A;
+$error-600:     #BB3542;
+$error-700:     #930D1A;
+$error-800:     #6B0000;
+$error-900:     #430000;
+
+$warning-100:   #FFE5D0;
+$warning-200:   #FECBA1;
+$warning-300:   #FEB272;
+$warning-400:   #FD9843;
+$warning-500:   #FD7E14;
+$warning-600:   #CA6510;
+$warning-700:   #984C0C;
+$warning-800:   #653208;
+$warning-900:   #331904;
+
+$success-100:   #BDFFDA;
+$success-200:   #95FFB2;
+$success-300:   #6DFF8A;
+$success-400:   #45FA62;
+$success-500:   #1DD23A;
+$success-600:   #00AA12;
+$success-700:   #008200;
+$success-800:   #005A00;
+$success-900:   #003200;
+
+$disabled:      #919EAB;
+
+/*
+ * Global Bootstrap variable overrides also used across project styles
+ */
+
+// Grid breakpoints
+$xs_bp:   0;
+$ms_bp:   380px; // custom (for smaller mobile devices)
+$sm_bp:   576px;
+$md_bp:   768px;
+$lg_bp:   992px;
+$xl_bp:   1200px;
+$xxl_bp:  1400px;
+
+// Grid breakpoints map
+$grid-breakpoints: (
+    xs:   $xs_bp,
+    ms:   $ms_bp,
+    sm:   $sm_bp,
+    md:   $md_bp,
+    lg:   $lg_bp,
+    xl:   $xl_bp,
+    xxl:  $xxl_bp,
+);
+
+// Spacing variables
+$spacer: 1rem;            // 16px
+$sp-0: 0;                // 0px
+$sp-1s: $spacer * 0.075;  // 1px
+$sp-1: $spacer * 0.15;    // 2px
+$sp-2: $spacer * 0.25;    // 4px
+$sp-3: $spacer * 0.375;   // 6px
+$sp-4: $spacer * 0.5;     // 8px
+$sp-5: $spacer * 0.75;    // 12px
+$sp-6: $spacer;           // 16px
+$sp-7: $spacer * 1.25;    // 20px
+$sp-8: $spacer * 1.5;     // 24px
+$sp-9: $spacer * 2.25;    // 36px
+$sp-10: $spacer * 3;      // 48px
+$sp-11: $spacer * 4.5;    // 72px
+$sp-12: $spacer * 6;      // 96px
+$sp-13: $spacer * 7;      // 112px
+$sp-14: $spacer * 8;      // 128px
+$sp-15: $spacer * 10;     // 160px
+$sp-16: $spacer * 12;     // 192px
