@@ -26,6 +26,7 @@
         "intl-tel-input": "^25.11.3",
         "sass": "^1.93.2",
         "sweetalert2": "^11.26.3",
+        "terser": "^5.44.0",
         "tom-select": "^2.4.3"
     }
 }

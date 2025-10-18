@@ -21,7 +21,6 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'resources/js/app.js',
-                css: 'resources/css/app.css'
             },
         },
         minify: 'terser',
