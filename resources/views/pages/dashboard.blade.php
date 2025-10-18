@@ -3,8 +3,8 @@
 @section('content')
 
     <div id="s_dashboard">
-        <!-- Spacing | 2.25 _ 6 _ 8 -->
-        <div class="pb-9 pb-sm-12 pb-lg-14"></div>
+        <!-- Spacing | 2.25 _ 4.5 _ 6 -->
+        <div class="pb-9 pb-sm-11 pb-lg-12"></div>
 
         <!-- People Manager Livewire Component -->
         @livewire('people-manager')

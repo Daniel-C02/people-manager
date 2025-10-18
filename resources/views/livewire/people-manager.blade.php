@@ -78,7 +78,8 @@
                             wire:click.prevent="deleteSelected"
                             wire:confirm="Are you sure you want to delete these {{ count($selected_items) }} items?"
                         >
-                            Delete selected
+                            <i class="bi bi-trash3 text-error-4 me-2"></i>
+                            <span class="text-error-4">Delete selected</span>
                         </a>
                     </li>
                 </ul>

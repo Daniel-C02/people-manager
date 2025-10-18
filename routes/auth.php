@@ -9,6 +9,9 @@ Route::middleware('guest')->group(function () {
     // GET route for the login page
     Route::get('login', [AuthenticatedSessionController::class, 'create'])
         ->name('login');
+
+    // This route handles the form submission
+    Route::post('login', [AuthenticatedSessionController::class, 'store']);
 });
 
 // Group routes that should only be accessible to 'auth' users (logged in)

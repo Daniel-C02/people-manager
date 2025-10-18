@@ -65,7 +65,10 @@ class PeopleManager extends Component
                     ->orWhere('email', 'like', $searchTerm)
                     ->orWhere('mobile_number', 'like', $searchTerm)
                     ->orWhere('south_african_id', 'like', $searchTerm)
-                    ->orWhere('language', 'like', $searchTerm);
+                    ->orWhere('language', 'like', $searchTerm)
+                    ->orWhereHas('interests', function ($interestQuery) use ($searchTerm) {
+                        $interestQuery->where('name', 'like', $searchTerm);
+                    });
             });
         }
 
